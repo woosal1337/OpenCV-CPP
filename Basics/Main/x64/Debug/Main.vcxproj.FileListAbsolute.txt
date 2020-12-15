@@ -1,0 +1,6 @@
+D:\GitHub\OpenCV-CPP\Intro\Main\x64\Debug\Main.exe
+D:\GitHub\OpenCV-CPP\Intro\Main\x64\Debug\Main.pdb
+D:\GitHub\OpenCV-CPP\Main\Main\x64\Debug\Main.exe
+D:\GitHub\OpenCV-CPP\Main\Main\x64\Debug\Main.pdb
+D:\GitHub\OpenCV-CPP\Basics\Main\x64\Debug\Main.exe
+D:\GitHub\OpenCV-CPP\Basics\Main\x64\Debug\Main.pdb
