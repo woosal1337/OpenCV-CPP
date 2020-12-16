@@ -7,18 +7,18 @@ using namespace cv;
 using namespace std;
 
 void main() {
-	// Custom Random Image
-	Mat img(512, 512, CV_8UC3, Scalar(255,0,255));
+	string path = "Resources/cards.jpg";
+	Mat img = imread(path);
+	Mat matrix, imgWarp;
+	float w = 250, h = 350;
+
+	Point2f src[4] = { {529,142}, {771, 190}, {405, 395}, {674, 457} };
+	Point2f dst[4] = { {0.0f, 0.0f}, {w, 0.0f}, {0.0f, h}, {w,h} };
+
+	matrix = getPerspectiveTransform(src, dst);
+	warpPerspective(img, imgWarp, matrix, Point(w,h));
+
 	imshow("Image", img);
-
-	// Custom Circle 
-	Mat imgCircle(512, 512, CV_8UC3, Scalar(255,255,255));
-	circle(imgCircle, Point(256, 256), 155, Scalar(0, 69, 255), FILLED);
-	rectangle(imgCircle, Point(130, 226), Point(382, 286), Scalar(255, 255, 255), FILLED);
-	line(imgCircle, Point(130, 296), Point(382, 296), Scalar(255, 255, 255), 3);
-	putText(imgCircle, "@woosal1337", Point(137, 262), FONT_HERSHEY_COMPLEX, 1, Scalar(0, 69, 255), 2);
-
-	imshow("Image Circle", imgCircle);
-
+	imshow("Image Warp", imgWarp);
 	waitKey(0);
 }

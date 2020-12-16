@@ -1,3 +1,13 @@
 ﻿  Main.cpp
-D:\GitHub\OpenCV-CPP\shapesAndText\Main\Main.cpp(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Main.vcxproj -> D:\GitHub\OpenCV-CPP\shapesAndText\Main\x64\Debug\Main.exe
+D:\GitHub\OpenCV-CPP\warpPerspective\Main\Main.cpp(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\GitHub\OpenCV-CPP\warpPerspective\Main\Main.cpp(19,48): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\GitHub\OpenCV-CPP\warpPerspective\Main\Main.cpp(19,46): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+  Main.vcxproj -> D:\GitHub\OpenCV-CPP\warpPerspective\Main\x64\Debug\Main.exe

@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\GitHub\OpenCV-CPP\colorDetection\Main\Main.cpp(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Main.vcxproj -> D:\GitHub\OpenCV-CPP\colorDetection\Main\x64\Debug\Main.exe
