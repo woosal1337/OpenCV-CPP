@@ -7,27 +7,21 @@ using namespace cv;
 using namespace std;
 
 void main() {
+	// Reading Image
 	string path = "Resources/test.png";
 	Mat img = imread(path);
-	Mat imgGray, imgBlur, imgCanny, imgCannyHd, imgDil, imgErode;
-	
-	cvtColor(img, imgGray, COLOR_BGR2GRAY);
-	GaussianBlur(img, imgBlur, Size(7,7), 5, 0);
-	Canny(imgBlur, imgCanny, 50, 150);
-	Canny(img, imgCannyHd, 50, 150);
-
-
-	Mat kernel = getStructuringElement(MORPH_RECT, Size(5, 5));
-	dilate(imgCanny, imgDil, kernel=kernel);
-	erode(imgDil, imgErode, kernel = kernel);
-
 	imshow("Image", img);
-	imshow("Gray Image", imgGray);
-	imshow("Blurred Image", imgBlur);
-	imshow("Canny Edge Detection", imgCanny);
-	imshow("HD Canny Detection", imgCannyHd);
-	imshow("Dilated Image", imgDil);
-	imshow("Image Erode", imgErode);
+
+	// Image Resizing
+	Mat imgResize;
+	resize(img, imgResize, Size(640, 480));
+	imshow("Image Resized", imgResize);
+
+	// Cropping image
+	Mat imgCrop;
+	Rect roi(100, 100, 300, 250);
+	imgCrop = img(roi);
+	imshow("Image Cropped", imgCrop);
 
 	waitKey(0);
 }

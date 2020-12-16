@@ -6,3 +6,5 @@ D:\GitHub\OpenCV-CPP\Basics\Main\x64\Debug\Main.exe
 D:\GitHub\OpenCV-CPP\Basics\Main\x64\Debug\Main.pdb
 D:\GitHub\OpenCV-CPP\Basics2\Main\x64\Debug\Main.exe
 D:\GitHub\OpenCV-CPP\Basics2\Main\x64\Debug\Main.pdb
+D:\GitHub\OpenCV-CPP\Basics3\Main\x64\Debug\Main.exe
+D:\GitHub\OpenCV-CPP\Basics3\Main\x64\Debug\Main.pdb
